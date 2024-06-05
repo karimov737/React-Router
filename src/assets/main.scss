@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.nav {
+    padding: 15px 0;
+
+    &_box {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &_list {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        list-style: none;
+    }
+
+    &_link {
+        font-weight: 600;
+        color: green;
+        font-size: 20px;
+        text-decoration: none;
+        &.active{
+            color: red;
+        }
+    }
+}
+
+.notfound {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+}
+.cars{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    &_card{
+        box-shadow: 0 0 20px #000;
+        padding: 20px;
+        img{
+            width: 100%;
+        }
+    }
+}
